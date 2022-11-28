@@ -6,8 +6,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 // PAGES
 import Home from "./pages/Home";
-import Products from "./pages/Products";
-import Reports from "./pages/Reports";
+import BankAccounts from "./pages/BankAccounts";
+import MyAccount from "./pages/MyAccount";
+import Logout from "./pages/Logout";
 
 export default function App() {
   return (
@@ -15,9 +16,10 @@ export default function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" exact component={Home} />
-          <Route path="/products" component={Products} />
-          <Route path="/reports" component={Reports} />
+          <Route path="/" element={<Home />} />
+          <Route path="/bank-accounts" element={<BankAccounts />} />
+          <Route path="/logout" element={<Logout />} />
+          <Route path="/account" element={<MyAccount />} />
         </Routes>
       </Router>
     </div>

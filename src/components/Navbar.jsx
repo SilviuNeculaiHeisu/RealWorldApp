@@ -37,7 +37,7 @@ export default function Navbar() {
                     </div>
 
                     <div className="new">
-                        <button id="newButton">$ NEW</button>
+                        <button  id="newButton">$ NEW</button>
                         <span id="notifications">
                         <IconContext.Provider value={{ color: "#FFEA00", size: '2em' }}>
                             <IoIcons.IoMdNotifications/>
