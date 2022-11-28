@@ -3,6 +3,7 @@ import React, { useState } from "react";
 // ICONS
 import * as FaIcons from "react-icons/fa"; //Now i get access to all the icons
 import * as AiIcons from "react-icons/ai";
+import * as IoIcons from "react-icons/io";
 
 import { IconContext } from "react-icons";
 
@@ -37,6 +38,12 @@ export default function Navbar() {
 
                     <div className="new">
                         <button id="newButton">$ NEW</button>
+                        <span id="notifications">
+                        <IconContext.Provider value={{ color: "#FFEA00", size: '2em' }}>
+                            <IoIcons.IoMdNotifications/>
+                        </IconContext.Provider>
+                        </span>
+                        <span id="badge">3</span>
                     </div>
                 </div>
                 <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
